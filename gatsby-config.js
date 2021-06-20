@@ -12,20 +12,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `MoradasDoPeGrande`,
-        short_name: `PeGrande`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-        icon: `src/assets/icon.png`, // 512 x 512 coloca o favicon
-      },
-    },
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -66,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.moradasdopegrande.com.br`,
+        siteUrl: `https://www.caixadaguarevestimentos.com.br`,
       },
     },
     {
@@ -82,6 +68,5 @@ module.exports = {
         ignore: [`**/styles.js`],
       },
     },
-    `gatsby-plugin-offline`
   ]
 }

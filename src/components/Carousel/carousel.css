@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  place-items: initial;
+  padding-top: 0px;
+  position: relative;
+}
+
+.containerCarousel {
+  color: red;
+  font-family: Inter;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.carousel .slide .legend {
+  background-color: #333;
+}
+
+.carousel .thumb {
+  display: none;
+}
+
+.carousel .control-dots .dot {
+  width: 15px;
+  height: 15px;
+}
+
+@media(max-width: 1110px) {
+  .carousel .slide img {
+    height: 25rem;;
+  }
+}
+
+@media(max-width: 520px) {
+  .carousel .slide img {
+    height: 18rem;;
+  }
+
+  .carousel .control-dots .dot {
+    width: 11px;
+    height: 11px;
+  }
+
+}

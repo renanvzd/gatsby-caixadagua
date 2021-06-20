@@ -1,17 +1,37 @@
 import React from "react";
-import Layout from '../components/Layout/Layout';
-import "./home.css"
+import "../components/home.css";
+import Carousel from "../components/Carousel/carousel";
+import { CardsHome } from "../components/grid";
+import PageTemplate from "../components/pageTemplate";
+import { Link } from "gatsby";
 
-export default function Home() {
+const IndexPage = () => {
   return (
-    <Layout>
-    <section className="header">
-      <div>
-        <h2>Design</h2> 
-        <h3>Develop & Deploy</h3>
-        <p>UX designer & Web Developer</p>
-      </div>
-    </section>
-    </Layout>
-  )
+    <PageTemplate>
+    <Carousel />
+      <div className="main">
+        <span> Conheça as opções que temos para você: </span>
+        
+        <div className="container1">
+          {CardsHome.map((item, index) => {
+            return(
+                    <div key={index}className="container3">
+                  <Link to={item.path}>
+                    <img src={item.imageCard} alt="Pé Grande1" />
+                      <p className="title1">{item.titleCards}</p>
+                      <p className="subtitle2">{item.subTitleCards}</p>
+                      <p className="knowMore3">{item.knowMore}</p>
+                  </Link>
+                    </div>
+              )
+          })}
+        </div>
+
+      </div> 
+    </PageTemplate>
+);
 }
+
+export default IndexPage;
+
+
