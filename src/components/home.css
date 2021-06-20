@@ -1,218 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
 
 .main {
-  text-align: center;
-  background: #CAE1FF;
+  
+  background: rgb(255, 255, 255);
   padding-top: 3rem;
   color: black;
-}
-.main span {
-  font-size: 3rem;
-  font-family: Lobster;
-  text-decoration: underline;
-}
-
-.risco {
-  width: 50%;
-	text-align: center; /* Para o IE */
+  
 }
 
 .container1{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30rem);
-  justify-content: center;
-  padding-top: 4rem;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, 25rem);
   
+  align-items: center;
+  margin-left: 4rem;
 }
 
-.container3 {
-  background-color: white;
-  width: 25rem;  
-  border-color: black;
-  border-width: 0.8px;
-  border-style: solid;
-  position: static;
-  margin-bottom: 3rem;
+.container2 {
+  width: 10rem;
+  display: flex;
+  width: 16rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container3 img {
-  flex-shrink: 0;
-  height: 20rem;
-  width: 24.9rem;
+.container2 img {
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  padding-bottom: 1.2rem;
+  padding-left: 6rem;
+}
+
+.title1 {
+  font-family: Inter;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  width: 15rem;
   padding-bottom: 0.5rem;
 }
 
-/* usar flex ou grid para centralizar */
-.textGrid:hover{
-background-color: #b5f5f7;  
-}
-
-
-.title1 {
-  font-family: Lobster;
-  font-size: 2rem;
-  padding-top: 1.5rem;
-  text-align: center;
-  padding-bottom: 1.5rem;
-  color: black;
-}
-
 .subtitle2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: Lora;
-  text-align: left;
-  padding-left: 2rem;
-  padding-bottom: 1.5rem;
-  font-weight: 600;
+  text-align: center;
   color: black;
 }
 
-.knowMore3 {
-  font-size: 1.1rem;
-  font-family: Lora;
-  text-align: left;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-  color: #3498db;
-  font-weight: 800;
+.container3 {
+  height: auto;
+  background-color: #0b72aa;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.boxC3 {
+  
+  height: 30rem;
+  width: auto;
+  display: block;
+  padding-top: 1rem;
+  margin: 0rem 20rem 0rem 20rem;
+}
+
+.titleC3 {
+margin-top: 3rem;
+padding-bottom: 2rem;
+font-family: inherit;
+font-size: 3.5rem;
+font-weight: 600;
+
 }
 
 
-@media(max-width: 975px) {
-
-  .main {
-    padding-top: 1rem;
-  }
-
-  .main span {
-    font-size: 1.9rem;
-  }
-
-  .container1{
-    display: grid;
-    grid-template-columns: none;
-    justify-content: center;
-    padding-top: 4rem;
-    align-items: center;
-    
-  }
-  
-  .container3 {
-    background-color: white;
-    width: 25rem;  
-    border-color: black;
-    border-width: 0.8px;
-    border-style: solid;
-    position: static;
-    margin-bottom: 3rem;
-  }
-  
-  .container3 img {
-    flex-shrink: 0;
-    height: 20rem;
-    width: 24.9rem;
-    padding-bottom: 0.5rem;
-  }
-  
-  /* usar flex ou grid para centralizar */
-  .textGrid:hover{
-  background-color: #b5f5f7;  
-  }
-  
-  
-  .title1 {
-    font-family: Lobster;
-    font-size: 2rem;
-    padding-top: 1rem;
-    text-align: center;
-    padding-bottom: 1.5rem;
-    color: black;
-  }
-  
-  .subtitle2 {
-    font-size: 1.25rem;
-    font-family: Lora;
-    text-align: left;
-    padding-left: 2rem;
-    padding-bottom: 1.5rem;
-    font-weight: 600;
-    color: black;
-  }
-  
-  .knowMore3 {
-    font-size: 1.1rem;
-    font-family: Lora;
-    text-align: left;
-    padding-left: 2rem;
-    padding-bottom: 1rem;
-    color: #3498db;
-    font-weight: 800;
-  }
-  
+.textC3 {
+  color: white;
+  font-size: 1.5rem;
+  width: 55rem;
 }
 
+.subTextC3 {
+  padding-top: 3rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 55rem;
+  font-style: italic;
 
-@media(max-width: 520px) {
-
-  .wrapperGrid{
-    padding-top: 2rem;
-  }
-
-  .main span {
-    font-size: 1.7rem;
-    position: relative;
-    right: 0.35rem;
-  }
-
-  .container1{
-    display: grid;
-    grid-template-columns: none;
-    justify-content: center;
-    padding-top: 3rem;
-    align-items: center;
-    
-  }
-  
-  .container3 {
-    background-color: white;
-    width: 18rem;  
-    border-color: black;
-    border-width: 0.8px;
-    border-style: solid;
-    position: static;
-    margin-bottom: 3rem;
-  }
-  
-  .container3 img {
-    flex-shrink: 0;
-    height: 15rem;
-    width: 17.9rem;
-    padding-bottom: 0.5rem;
-  }
-  
-  /* usar flex ou grid para centralizar */
-  .textGrid:hover{
-  background-color: #b5f5f7;  
-  }
-  
-  .title1 {
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
-  
-  .subtitle2 {
-    font-size: 1rem;
-    padding-left: 1rem;
-    text-align: left;
-    
-  }
-  
-  .knowMore3 {
-    font-size: 1rem;
-    padding-left: 1rem;
-  }
-  
 }
 
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 45rem);
+  height: 20rem;
+  align-items: center;
+  margin-left: 10rem;
+}
+
+.container4 img {
+  display: flex;
+  height: 10.5rem;
+  width: 10.5rem;
+  padding-bottom: 1.2rem;
+  padding-left: 17rem;
+}

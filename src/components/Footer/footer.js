@@ -48,7 +48,7 @@ const Footer = () => {
             </li>
           </ul>
       </div>
-      <span>&copy; 2020 - Caixa D'Água Revestimentos</span>
+      <span>&copy; 2020 - Caixa D'Água Revestimentos.  Porto Alegre/RS • (51) 3348-1239</span>
       <span>Website by RVD. Contato: renanvz@outlook.com</span>
       
     </div>
